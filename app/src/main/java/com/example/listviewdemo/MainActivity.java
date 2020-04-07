@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Creating an array adapter and telling it to use said template to displace in the listView
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, familyNames);
-        //setting the listview to use the above array adapter
+        //setting the list view to use the above array adapter
         myListView.setAdapter(arrayAdapter);
-        //Sets up an On Clikc Listener for when someone clicks on one of the names
+        //Sets up an On Click Listener for when someone clicks on one of the names
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
